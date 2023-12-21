@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebServer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .loveBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            background-color: rgb(36, 40, 66);
+        }
+
+        .loveLine {
+            height: 200px;
+        }
+
+        .loveLine li {
+            float: left;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        .loveLine li:nth-child(1) {
+            background-color: red;
+            animation: jump1 3s infinite;
+        }
+
+        .loveLine li:nth-child(2) {
+            background-color: rgb(238, 118, 5);
+            animation: jump2 3s 0.2s infinite;
+        }
+
+        .loveLine li:nth-child(3) {
+            background-color: rgb(106, 10, 233);
+            animation: jump3 3s 0.4s infinite;
+        }
+
+        .loveLine li:nth-child(4) {
+            background-color: darkmagenta;
+            animation: jump4 3s 0.6s infinite;
+        }
+
+        .loveLine li:nth-child(5) {
+            background-color: rgb(245, 11, 147);
+            animation: jump5 3s 0.8s infinite;
+        }
+
+        .loveLine li:nth-child(6) {
+            background-color: rgb(32, 9, 231);
+            animation: jump4 3s 1.0s infinite;
+        }
+
+        .loveLine li:nth-child(7) {
+            background-color: rgb(36, 170, 81);
+            animation: jump3 3s 1.2s infinite;
+        }
+
+        .loveLine li:nth-child(8) {
+            background-color: #f62e74;
+            animation: jump2 3s 1.4s infinite;
+        }
+
+        .loveLine li:nth-child(9) {
+            background-color: red;
+            animation: jump1 3s 1.6s infinite;
+        }
+
+        @keyframes jump1 {
+
+            30%,
+            50% {
+                height: 60px;
+                transform: translateY(-30px);
+            }
+
+            70%,
+            100% {
+                height: 20px;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes jump2 {
+
+            30%,
+            50% {
+                height: 120px;
+                transform: translateY(-60px);
+            }
+
+            70%,
+            100% {
+                height: 20px;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes jump3 {
+
+            30%,
+            50% {
+                height: 160px;
+                transform: translateY(-75px);
+            }
+
+            70%,
+            100% {
+                height: 20px;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes jump4 {
+
+            30%,
+            50% {
+                height: 180px;
+                transform: translateY(-60px);
+            }
+
+            70%,
+            100% {
+                height: 20px;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes jump5 {
+
+            30%,
+            50% {
+                height: 200px;
+                transform: translateY(-45px);
+            }
+
+            70%,
+            100% {
+                height: 20px;
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(36, 40, 66);">
+    <br />
+    <br />
+    <div align="center" style="color: white;">
+        <font size="5"> <strong>欢迎访问tyc的SimpleWebServer</strong></font>
+    </div>
+    <br />
+    <br />
+    <div class="loveBox">
+        <ul class="loveLine">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <form action="0" method="post">
+        <div align="center"><button type="submit" style="font-size: 20px;">注 册</button></div>
+    </form>
+    <br />
+    <form action="1" method="post">
+        <div align="center"><button type="submit" style="font-size: 20px;">登 录</button></div>
+    </form>
+    <br />
+    <br />
+
+</body>
+
+</html>
